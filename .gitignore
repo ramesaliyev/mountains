@@ -1,0 +1,19 @@
+# OS Generated
+.DS_Store*
+Thumbs.db
+
+# IDE Specific
+.idea
+
+# Package managers
+node_modules/
+bower_components/
+
+# Sass
+.sass-cache/
+
+# Log files
+*.log
+
+# Dist folders.
+public/build/

@@ -1,0 +1,25 @@
+{
+  "name": "mountains",
+  "version": "1.0.0",
+  "description": "Mountains web blog. Simple web blog demonstration where you can earn badges.",
+  "scripts": {
+    "setup": "npm install --production",
+    "postinstall": "node setup/install.js",
+    "start": "node setup/start.js"
+  },
+  "author": "Rameş Aliyev <creator@ramesaliyev.com> (http://ramesaliyev.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-load-tasks": "^0.8.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "dependencies": {
+    "app-module-path": "^1.0.4",
+    "mongoose": "^4.2.6",
+    "open": "0.0.5"
+  }
+}
