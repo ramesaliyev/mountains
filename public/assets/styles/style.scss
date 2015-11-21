@@ -1,1 +1,16 @@
-body { color: green };
+/**
+ * Import all files.
+ */
+
+// Settings
+@import "settings/colors";
+@import "settings/typography";
+
+// Layout
+@import "layouts/skeleton";
+
+// Components
+@import "components/login";
+
+// Pages
+@import "pages/login";

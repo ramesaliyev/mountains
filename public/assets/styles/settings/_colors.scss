@@ -1,0 +1,16 @@
+/**
+ * Colors.
+ */
+
+// Background.
+$general-background: #F8F8F8;
+
+// Text Colors
+$general-text-color: #C2C2C2;
+$primary-title-color: #48B6CD;
+$secondary-title-color: #808C9E;
+
+html, body {
+  color: $general-text-color;
+  background-color: $general-background
+}

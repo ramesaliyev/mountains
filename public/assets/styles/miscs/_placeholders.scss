@@ -1,0 +1,52 @@
+/**
+ *  Placeholder styles.
+ */
+
+// View adjustments for pseudo elements.
+%pseudo-defaults {
+  display: block;
+  content: " ";
+}
+
+// Reset element.
+%reset {
+  padding: {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+  };
+  margin: {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+  };
+  outline: none;
+  border: none;
+  list-style: none;
+}
+
+// Center element.
+%center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Hide text.
+%hide-text {
+  text-indent: -9999px;
+}
+
+// Clearfix.
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Mountains">
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
-    <title>---</title>
-</head>
+    <title>My App</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/vendors.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" /></head>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <body>
-    xxx
+    <!-- Main Controller -->
+    <div ng-controller="Main">
+        <h1>{{ message }}</h1>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/vendors.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>

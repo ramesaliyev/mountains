@@ -8,7 +8,7 @@ var paths = require('configs/paths');
 // Export task.
 module.exports = function() {
   connect.server({
-    root: paths.public + 'html/',
+    root: paths.build,
     port: 4004
-  })
+  });
 };
