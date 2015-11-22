@@ -20,6 +20,8 @@
     "angular": "~1.4.8",
     "normalize-css": "normalize.css#~3.0.3",
     "angular-route": "~1.4.8",
-    "angular-resource": "~1.4.8"
+    "angular-resource": "~1.4.8",
+    "angular-ui-notification": "~0.1.0",
+    "angular-cookies": "~1.4.8"
   }
 }

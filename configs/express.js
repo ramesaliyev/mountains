@@ -1,4 +1,8 @@
 // Export express settings.
 module.exports = {
-  port  : 7007
+  ports: {
+    site    : 7007,
+    api     : 7008,
+    watcher : 7009
+  }
 }

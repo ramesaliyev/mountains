@@ -3,18 +3,23 @@
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
-    <title>My App</title>
+    <title>Mountains</title>
+    <base href="/">
     
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="/css/vendors.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" /></head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>    
 <body>
+    <!-- Growl -->
+    <div growl></div>
+    
     <!-- Main Controller -->
-    <div ng-controller="Main">
-        <h1>{{ message }}</h1>
+    <div ng-controller="Controllers.Main">
+        <ng-view></ng-view>
     </div>
 
     <!-- Scripts -->

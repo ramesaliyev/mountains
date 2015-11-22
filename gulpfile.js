@@ -9,4 +9,4 @@ var gulp = require('gulp');
 
 // Task sets and aliases.
 gulp.task('buildall', ['buildjs', 'buildcss', 'buildhtml', 'buildvendors']);
-gulp.task('default', ['watch']);
+gulp.task('default', ['buildall', 'watch']);

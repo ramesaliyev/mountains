@@ -18,7 +18,7 @@ html, body {
   font-size: $body-font-size;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   @extend %reset;
   font-family: 'Roboto Slab', serif;
   font-weight: $font-light;

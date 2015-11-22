@@ -6,11 +6,16 @@
 @import "settings/colors";
 @import "settings/typography";
 
+// Miscs
+@import "miscs/placeholders";
+
 // Layout
 @import "layouts/skeleton";
 
-// Components
-@import "components/login";
+// Elements
+@import "elements/button";
+@import "elements/input";
+@import "elements/textarea";
 
-// Pages
-@import "pages/login";
+// Components
+@import "components/form";

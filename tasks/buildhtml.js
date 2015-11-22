@@ -11,7 +11,7 @@ module.exports = function() {
     .pipe(minify())
     .pipe(gulp.dest(paths.build));
 
-  gulp.src(paths.templates + '*.tpl')
+  gulp.src(paths.templates + '**/*.tpl')
     .pipe(minify())
     .pipe(gulp.dest(paths.build_tpl));
 };

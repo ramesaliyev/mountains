@@ -1,4 +1,4 @@
-// pathss.
+// Paths.
 var paths = {};
     paths.bower       = "bower_components/";
     paths.node        = "node_modules/";
