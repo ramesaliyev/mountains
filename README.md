@@ -2,6 +2,15 @@
 
 Mountains is a multi-user blog prototype with earning badge feature, this project uses MEAN stack and it is not production ready or something similar and only for demonstration.
 
+##Badges
+
+For now there is only four badges.
+
+- Clicker : When you click links a few times.
+- No Life : When you spend long time in site.
+- Scroller: When you scroll 80% length of a few different long pages.
+- Thief   : When you copy/paste and steel contents this web site. 
+
 ##Installation
 
 First make sure that mongodb up & running in your system. You can configure settings under `configs/db.js`.
