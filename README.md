@@ -28,3 +28,7 @@ Note: node-gyp not work well with NodeJS 5.x versions right now, so if you're ge
 - Improve API responses. Let user know what went wrong.
 - Make controller/services load automatically. 
 - Auto log-in user after registration.
+
+##Thanks
+
+Thanks to my friend <a href="http://hellocihan.com" target="_blank">Cihan</a> for design. But please note that i had to simplify a few details because of limited time.
