@@ -10,11 +10,11 @@ Then just run `npm run setup` in root. After installation app will start automat
 
 Other times you can start app with `npm run start` command in root.
 
-Note: Be patient about installation, it can take a while, and ignore errors in terminal.
+Note: Be patient about installation, it can take a while.
 
 ##Background Info
 
-When you start mountains it will run three service. The site, api and watcher. Ports of these services can be changed under `config/express`.
+When you start mountains it will run three service. The site, api and watcher.
 
 ##Requirements
 

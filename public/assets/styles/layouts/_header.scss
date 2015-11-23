@@ -1,0 +1,51 @@
+/**
+ * Site header.
+ */
+
+.masthead {
+  height: 60px;
+  background-color: #fff;
+
+  .site-navigation {
+    text-align: center;
+
+    nav {
+      display: inline-block;
+    }
+
+    ol, li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      height: 100%;
+      text-align: center;
+
+      a {
+        display: inherit;
+        height: inherit;
+        padding: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: $secondary-title-color;
+
+        &:hover {
+          background-color: #48B6CD;
+          color: #fff;
+        }
+
+        &.highlighted {
+          background-color: #FFB400;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .user-info {
+    float: right;
+  }
+}

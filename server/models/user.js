@@ -5,17 +5,22 @@ var mongoose          = require('mongoose'),
     bcrypt            = require('bcrypt'),
     SALT_WORK_FACTOR  = 10;
 
+// Get Badge schema.
+require('server/models/badge');
+
 // Create the schema.
 var userSchema = new Schema({
-  username  : { type: String, required: true, unique: true },
-  password  : { type: String, required: true },
-  badges    : [{ type : Schema.Types.ObjectId, ref: 'Badge' }]
+  username      : { type: String, required: true, unique: true },
+  password      : { type: String, required: true },
+  badges        : [{ type: Schema.Types.ObjectId, ref: 'Badge'}],
+  badgeStatuses : { type:Schema.Types.Mixed, default: {} }
 });
 
-// Only return badges.
+// Select what to return.
 userSchema.set('toJSON', {
     transform: function(doc, ret, options) {
         var retJson = {
+            id      : ret._id,
             username: ret.username,
             badges  : ret.badges
         };

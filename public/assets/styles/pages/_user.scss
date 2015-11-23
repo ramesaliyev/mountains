@@ -1,0 +1,54 @@
+/**
+ * User.
+ */
+
+.user {
+  margin-top:30px;
+
+  .profile {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .badges,
+  .badge {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .badge {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+
+    &.not-earned {
+      filter: grayscale(100%);
+    }
+
+    img {
+
+    }
+
+    .name,
+    .info {
+      position: absolute;  
+      left: 140px;
+    }
+
+    .name {
+      top: 55px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .info {
+      top: 85px;
+    }
+  }
+}

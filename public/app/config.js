@@ -1,5 +1,33 @@
 // General configs.
 module.exports = function(app){
+  // Set user configurations.
+  app.run(['$rootScope', '$cookies', function($rootScope, $cookies){
+    // Keep global settings.
+    $rootScope.settings = {
+      apiHost     : 'http://localhost:7008',
+      watcherHost : 'http://localhost:7009'
+    };
+
+    // User info.
+    var user = $rootScope.user = {
+      logged  : false,
+      username: null,
+      token   : null,
+      id      : null
+    };
+
+    // Get login info from cookies.
+    var loginInfo = $cookies.getObject('login');
+
+    // If there is login info, save into user. 
+    if(loginInfo) {
+      user.logged   = true;
+      user.username = loginInfo.username;
+      user.token    = loginInfo.token;
+      user.id       = loginInfo.id;  
+    }  
+  }]);
+
   // Configure app.  
   app.config(['NotificationProvider', function(NotificationProvider) {
     // Notification.
@@ -10,7 +38,8 @@ module.exports = function(app){
       verticalSpacing   : 20,
       horizontalSpacing : 20,
       positionX         : 'right',
-      positionY         : 'bottom'
+      positionY         : 'bottom',
+      replaceMessage    : true
     });
   }]);
 
@@ -39,16 +68,8 @@ module.exports = function(app){
         responseError: function(response) {
           // If status is forbidden
           if(response.status === 403) {
-            // Clear user.
-            $rootScope.user.logged    = false;
-            $rootScope.user.username  = null;
-            $rootScope.user.token     = null;
-
-            // Clear cookies.
-            $cookies.remove('login');
-
             // Redirect to login.
-            $location.path('/login');
+            $location.path('/logout');
           }
 
           return $q.reject();

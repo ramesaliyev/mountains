@@ -29,13 +29,18 @@ module.exports = ['$scope', '$rootScope', '$location', '$cookies', 'Notification
       // Save to cookie.
       $cookies.putObject('login', {
         username: response.username,
-        token   : response.token
+        token   : response.token,
+        id      : response.id
       });
 
       // Set user.
       $rootScope.user.logged   = true;
       $rootScope.user.username = response.username;
       $rootScope.user.token    = response.token;
+      $rootScope.user.id       = response.id;
+
+      // Connect to socket.
+      $scope.initWatcher();
 
       // Redirect to login.
       $location.path('/');

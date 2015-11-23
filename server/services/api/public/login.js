@@ -37,14 +37,15 @@ module.exports = function(req, res) {
       if(!matched) return res.status(401).send();
 
       // If passwords match, create token.
-      var token = jwt.sign(user, authConfigs.secret, {
+      var token = jwt.sign({username: username, id:user._id}, authConfigs.secret, {
         expiresInMinutes: 1440
       });
 
       // Return token.
       res.json({
         username: username,
-        token   : token
+        token   : token,
+        id      : user._id
       });
     });
   });  

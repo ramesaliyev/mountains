@@ -1,0 +1,15 @@
+/**
+ * Homepage.
+ */
+
+.homepage {
+  .cover{
+    width: 100%;
+    display: block;
+  }
+
+  .post {
+    max-height: 190px;
+    overflow: hidden;
+  }
+}

@@ -21,7 +21,7 @@ module.exports = function(app){
     // verifies secret and checks exp
     jwt.verify(token, authConfigs.secret, function(err, decoded) {      
       // If something went wrong response with internal server error.
-      if (err)  return res.status(500).send();   
+      if (err) return res.status(500).send();   
       
       // if everything is good, save to request for use in other routes
       req.decoded = decoded;    
@@ -32,7 +32,7 @@ module.exports = function(app){
   });
 
   // Private apis list.
-  privateApi.get('/users', require('./private/users'));
+  privateApi.post('/post', require('./private/post'));
 
   // Regiser apis.
   app.use('/api/private', privateApi);

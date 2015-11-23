@@ -9,9 +9,6 @@
 // Miscs
 @import "miscs/placeholders";
 
-// Layout
-@import "layouts/skeleton";
-
 // Elements
 @import "elements/button";
 @import "elements/input";
@@ -19,3 +16,17 @@
 
 // Components
 @import "components/form";
+
+// Layout
+@import "layouts/skeleton";
+@import "layouts/header";
+@import "layouts/general";
+
+// Pages
+@import "pages/homepage";
+@import "pages/post";
+@import "pages/user";
+@import "pages/leaderboard";
+
+// Plugins
+@import "plugins/notifications";

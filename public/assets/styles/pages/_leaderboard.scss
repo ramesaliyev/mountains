@@ -1,0 +1,44 @@
+/**
+ * Leaderboard.
+ */
+
+.leaderboard {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    display: inline;
+    color: $secondary-title-color;
+  }
+
+  .users,
+  .user {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .user {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+    img {
+      display: inline-block;
+      width: 40px;
+      margin-right: 5px;
+    }
+
+    .badges {
+      position: absolute;
+      right: 0;
+      top: 7px;
+    }
+  }
+}

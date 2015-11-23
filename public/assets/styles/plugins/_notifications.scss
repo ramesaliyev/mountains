@@ -1,0 +1,36 @@
+/**
+ * Notfications.
+ */
+
+.badge-notification {
+  width: 380px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  img {
+    position: absolute;
+    width: 80px;
+    left: 9px;
+    top: 9px;
+  }
+
+  span {
+    display: inline-block;
+    position: absolute;
+  }
+
+  .name {
+    color: #333;
+    left: 100px;
+    top: 20px;
+  }
+
+  .info {
+    color: #999;
+    left: 100px;
+    top: 42px;
+    max-width: 300px;
+  }
+}

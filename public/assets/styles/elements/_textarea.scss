@@ -1,0 +1,9 @@
+/**
+ * Textarea.
+ */
+
+textarea {
+  @extend input;
+  height: 500px;
+  resize:vertical;
+}

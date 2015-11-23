@@ -6,9 +6,11 @@ console.log('Installation started.');
 
 // Set pre-defined values in db.
 require('./db/badges');
+require('./db/users')(
+  require('./db/posts')
+);
 
 // Status
-console.log('Badges saved.');
 console.log('Building statics... This can take a while, be patient.');
 
 // Build statics.

@@ -5,8 +5,10 @@ var mongoose = require('mongoose'),
 
 // Create the schema.
 var badgeSchema = new Schema({
-  name        : { type: String, required: true, unique: true },
+  codename    : { type: String, required: true, unique: true },
+  name        : { type: String, required: true },
   imagename   : { type: String, required: true },
+  info        : { type: String, required: true },
   requirements: { type: Schema.Types.Mixed  }
 });
 

@@ -9,7 +9,9 @@ var js = [
   paths.bower + 'angular-route/angular-route.min.js',
   paths.bower + 'angular-resource/angular-resource.min.js',
   paths.bower + 'angular-cookies/angular-cookies.min.js',
-  paths.bower + 'angular-ui-notification/dist/angular-ui-notification.min.js'
+  paths.bower + 'angular-ui-notification/dist/angular-ui-notification.min.js',
+  paths.bower + 'socket.io-client/socket.io.js',
+  paths.bower + 'lodash/lodash.min.js',
 ];
 
 // CSS Vendors.
